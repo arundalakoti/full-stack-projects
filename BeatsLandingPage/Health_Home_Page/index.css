@@ -1,0 +1,184 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+body{
+  /* max-width: 1440px; */
+  background-color: #f0f4f5;
+}
+
+.header-links{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo-img{
+  width: 150px;
+}
+
+.stethoscope-img{
+  position: absolute;
+    width: 40%;
+    top: 154px;
+    right: 37%;
+    z-index: -1;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 15vh;
+  padding: 0 5%;
+}
+
+main button{
+  color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 40px;
+    background-color: #20bc7e;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85vh;
+}
+
+main img{
+  width: 34%;
+  height: 100%;
+}
+
+.main-content{
+  width: 50%;
+  margin-left: 5%;
+  position: relative;
+}
+
+.main-content img{
+  width: 25px;
+}
+
+.main-header{
+  font-size: 70px;
+}
+
+.main-con{
+  color: #7c7c7c;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.bottom-angle-img{
+  position: absolute;
+  right: 50px;
+}
+
+.mouse-img{
+  position: absolute;
+  right: -10px;
+  bottom: 0;
+  width: 30px;
+}
+
+.about-us-section{
+  margin: 0 auto;
+  height: 85vh;
+
+  padding: 0 5%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us-section p,h1{
+  width: 50%;
+}
+
+.card-section{
+  width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+  text-align: center;
+}
+
+section h1{
+  margin-bottom: 20px;
+}
+
+section p{
+  font-size: 18px;
+    font-weight: 400;
+}
+
+.cards{
+  display: flex;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.green-color{
+  color: #20BC7E;
+}
+
+form{
+  box-shadow: 0 0 10px black;
+  background-color: #f0f4f5;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 16px 20px;
+  gap: 10px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+form h1{
+  width: 100%;
+  text-align: center;
+}
+
+form input{
+  border-radius: 10px;
+  border: none;
+  height: 30px;
+  padding: 10px;
+}
+
+form textarea{
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  resize: none;
+}
+
+form button{
+  padding: 10px;
+  color: white;
+  background-color: #20BC7E;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}

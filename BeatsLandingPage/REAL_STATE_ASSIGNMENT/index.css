@@ -1,0 +1,143 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Manrope";
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 25px 0;
+}
+
+.header-outer{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./Photos/mainBackground.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 125vh;
+  color: white;
+}
+
+header img{
+  height: 45px;
+    width: 120px;
+}
+
+.header-content{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer .logo{
+  width: 150px;
+}
+
+.social-media img{
+  width: 45px;
+  height: 45px;
+  margin-right: 20px;
+}
+
+.ft-description{
+  width: 323px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.ft-left-section{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ft-right-section{
+  display: grid;
+  grid-template-columns: repeat(3,86px);
+  grid-template-rows: repeat(5,30px);
+  width: 50%;
+  gap: 20px;
+  column-gap: 120px;
+  cursor: pointer;
+}
+
+.ft-header{
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+
+.subs-section .header{
+  font-weight: 800;
+    font-size: 60px;
+}
+
+.subs-section .desp{
+  font-weight: 400;
+    font-size: 18px;
+    width: 55%;
+}
+
+.subs-section{
+  margin: 100px 70px;
+  background: #6663e9;
+  box-shadow: 0px 4px 60px rgb(0 0 0 / 5%);
+  border-radius: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 70px 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.subs-section .input-field{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #5654d1;
+  border-radius: 40px;
+  width: 468px;
+  height: 61px;
+  padding: 0 20px;
+  border: none;
+}
+
+.subs-section input{
+  background: #5654d1;
+  border: none;
+  width: 40%;
+}
+
+.subs-section button{
+  background: #ffffff;
+  box-shadow: 0px 4px 60px rgb(0 0 0 / 5%);
+  border-radius: 40px;
+  width: 174px;
+  height: 61px;
+  color: #6663e9;
+  border: none;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.subs-section .bottom{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}

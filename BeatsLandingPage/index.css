@@ -1,0 +1,103 @@
+body {
+  background: #0f0f10;
+  margin: 0 15vw;
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  padding: 30px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header section {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+header button {
+  background: #1e1e21;
+  border-radius: 8px;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 10px 40px;
+  color: #ffffff;
+}
+
+header div {
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+}
+
+.beats-logo {
+  width: 25px;
+  height: 25px;
+}
+
+.main-image {
+  width: 230px;
+  position: absolute;
+  top: -118px;
+  left: 257px;
+}
+
+.on-ear {
+  width: 320px;
+  margin-left: 50px;
+}
+
+.overview-section {
+  float: right;
+  color: white;
+  margin-top: 30px;
+  margin-left: 414px;
+}
+
+.overview-header {
+  font-weight: 600;
+  font-size: 46px;
+  margin-bottom: 25px;
+}
+
+.overview-section h3 {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.overview-section p {
+  width: 65%;
+  font-size: 12px;
+  font-weight: 300;
+  color: #bdc0c2;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+
+.add-to-blog {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+  background: #1e1e21;
+  border-radius: 8px;
+  width: fit-content;
+  padding: 10px 25px;
+}
+
+.available-on {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 50px;
+  margin-bottom: 40px;
+}

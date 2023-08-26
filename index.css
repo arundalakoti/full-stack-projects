@@ -1,0 +1,38 @@
+/* // .page-loading-overlay {
+//   position: fixed;
+//   left: 0; */
+/* //   right: 0;
+//   top: 0;
+//   bottom: 0;
+//   z-index: 1000;
+//   background: rgba(255, 255, 255, 0.9);
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .lkspinner-container {
+//   padding: 20px 10px;
+//   position: relative;
+//   z-index: 3;
+// }
+
+// .lkspinner {
+//   height: 20px;
+//   width: 20px;
+//   animation: rotate 0.8s infinite linear;
+//   border: 2px solid #18cfa8;
+//   border-right-color: transparent;
+//   border-radius: 20px;
+//   will-change: transform;
+//   margin: 0 auto;
+// } */
+
+#red-color {
+  color: red;
+  background-color: blue;
+}
+
+.purple {
+  color: purple;
+}
