@@ -87,22 +87,28 @@ formNewList(arr, callbackList);
 // 5. Greeting Promise.
 // *****************************************************************************************************************************
 
-// function greetPromise(name) {
-//   console.log(`Hello, ${name}`);
-//   resolve("done");
-// }
+function greetPromise(name) {
+  return new Promise((resolve, reject) => {
+    if (typeof name !== "string" || name.trim() === "") {
+      reject(new Error("Invalid input: Name must be a non-empty string"));
+    } else {
+      const greeting = `Hello, ${name}!`;
+      resolve(greeting);
+    }
+  });
+}
 
-// function greetUser(name, greetPromise) {
-//    greetPromise(name)
-//     .then((val) => {
-//       console.log("Promise Successful",val);
-//     })
-//     .catch((e) => {
-//       console.log("Error: ", e);
-//     });
-// }
+function greetUser(name, greetPromise) {
+  greetPromise(name)
+    .then((val) => {
+      console.log(val);
+    })
+    .catch((e) => {
+      console.log("Error: ", e);
+    });
+}
 
-// greetUser("Sumit",greetPromise);
+greetUser("Sumit", greetPromise);
 
 // *****************************************************************************************************************************
 // 6. Fetch results asynchronously.
@@ -175,7 +181,7 @@ async function errorHandling() {
   fetch(apiUrl)
     .then((response) => {
       if (!response.ok) {
-        throw ("Network response was not ok");
+        throw "Network response was not ok";
       }
       return response.json();
     })
