@@ -1,4 +1,5 @@
 var fs = require("fs");
+var events = require("events");
 
 //**********************2*************************
 const aboutNodeJs =
@@ -86,3 +87,38 @@ server.listen(PORT, HOST, function () {
 });
 
 // **********************8*************************
+
+var em = new events.EventEmitter();
+
+em.on("subscribe", function (data) {
+  console.log("Thanks for subscribing to", data);
+});
+
+em.emit("subscribe", "College Wallah");
+
+// **********************9*************************
+
+var em = new events.EventEmitter();
+function subscription(data) {
+  console.log("Thanks for subscribing to", data);
+}
+
+em.on("subscribe", subscription);
+
+em.emit("subscribe", "College Wallah");
+
+em.removeListener("myEvent", subscription);
+
+// em.off("myEvent", subscription);
+
+em.emit("subscribe", "College Wallah");
+
+// **********************10*************************
+
+const defaultMaxListeners = em.getMaxListeners();
+console.log(`Current default maximum listeners: ${defaultMaxListeners}`);
+
+em.setMaxListeners(5);
+
+const newMaxListeners = em.getMaxListeners();
+console.log(`New maximum listeners: ${newMaxListeners}`);
